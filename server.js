@@ -40,5 +40,5 @@ wss.on('connection', function connection(ws) {
 
 // Start the HTTP & WebSocket server
 server.listen(port, () => {
-  console.log(`Server is running on http://192.168.1.69:${port}`);
+  console.log(`Server is running on http://localhost:${port}`);
 });
