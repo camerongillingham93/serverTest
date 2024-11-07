@@ -22,7 +22,7 @@ wss.on('connection', function connection(ws) {
     console.log('received: %s', message);
 
     // Create a hardcoded message object
-    const responseMessage = {Payload: 'Auto-Reply', NodeID: 1};
+    const responseMessage = {Payload: "Auto-Reply", NodeID: 4, SOS: 0} 
 
     // Send the message back to the client as a JSON string
     ws.send(message.toString());
